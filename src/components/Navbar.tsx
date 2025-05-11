@@ -12,28 +12,30 @@ import {
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-10">
+    <nav className="bg-brand-grey border-b border-gray-200 sticky top-0 z-25">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Calendar className="h-6 w-6 text-violet-700" />
-            <span className="text-xl font-bold text-gray-800">42AD Events</span>
+            {/* <Calendar className="h-6 w-6 text-brand-blue" /> */}
+            {/* <span className="text-xl font-bold text-gray-800"> */}
+              <img src="/logo-white-ar.png" alt="Logo" className="h-12 object-contain" />
+            {/* </span> */}
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-violet-700 font-medium">Home</Link>
-            <Link to="/events" className="text-gray-700 hover:text-violet-700 font-medium">Events</Link>
-            <Link to="/create" className="text-gray-700 hover:text-violet-700 font-medium">Create Event</Link>
+            {/* <Link to="/" className="text-gray-700 hover:text-brand-blue font-medium">Home</Link>
+            <Link to="/events" className="text-gray-700 hover:text-brand-blue font-medium">Events</Link> */}
+            {/* <Link to="/create" className="text-gray-700 hover:text-brand-blue font-medium">Create Event</Link> */}
           </div>
 
           {/* Authentication Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-violet-700 text-violet-700 hover:bg-violet-50">
+            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue">
               Log In
             </Button>
-            {/* <Button className="bg-violet-700 hover:bg-violet-800">
+            {/* <Button className="bg-brand-blue hover:bg-violet-800">
               Sign Up
             </Button> */}
           </div>
@@ -46,7 +48,7 @@ const Navbar = () => {
                   <Menu className="h-6 w-6" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
+              {/* <DropdownMenuContent align="end" className="w-56">
                 <DropdownMenuItem>
                   <Link to="/" className="w-full">Home</Link>
                 </DropdownMenuItem>
@@ -59,10 +61,10 @@ const Navbar = () => {
                 <DropdownMenuItem>
                   <Link to="/login" className="w-full">Log In</Link>
                 </DropdownMenuItem>
-                {/* <DropdownMenuItem> */}
-                  {/* <Link to="/signup" className="w-full">Sign Up</Link> */}
-                {/* </DropdownMenuItem> */}
-              </DropdownMenuContent>
+                <DropdownMenuItem>
+                  <Link to="/signup" className="w-full">Sign Up</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent> */}
             </DropdownMenu>
           </div>
         </div>

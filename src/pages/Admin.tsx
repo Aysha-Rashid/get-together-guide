@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black-500">
       {/* Hero Section */}
-      <header className="bg-brand-blue text-white">
+      <header className="bg-brand-green text-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Discover Amazing Events</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">Find your events in one place</p>
@@ -38,7 +38,7 @@ const Index = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            <Button className="bg-white text-brand-blue hover:bg-brand-blue">
+            <Button className="bg-white text-violet-800 hover:bg-violet-100">
               <Search className="mr-2" size={16} />
               Search
             </Button>
@@ -46,7 +46,7 @@ const Index = () => {
         </div>
       </header>
  
-      <main className="container  mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="w-full lg:w-1/4">
@@ -61,7 +61,7 @@ const Index = () => {
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-2xl font-bold text-gray-800">Upcoming Events</h2>
               <Link to="/events">
-                <Button variant="outline" className="flex items-center gap-2 text-brand-blue border-brand-blue">
+                <Button variant="outline" className="flex items-center gap-2 text-violet-700 border-violet-700">
                   <Calendar size={16} />
                   View All
                 </Button>
@@ -85,7 +85,7 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-brand-grey text-white py-12">
+      <footer className="bg-violet-800 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

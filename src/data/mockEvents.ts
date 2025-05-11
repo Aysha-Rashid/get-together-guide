@@ -52,7 +52,7 @@ export const mockEvents: Event[] = [
     date: "2025-05-30",
     time: "06:30 PM - 09:00 PM",
     location: "Gymnation, Mushrif Mall",
-    category: "Wellness",
+    category: "Outdoor activities",
     image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800",
     organizer: "Sponsor",
   },
@@ -96,7 +96,7 @@ export const eventCategories = [
   { id: "Competitions", name: "Competitions" },
   { id: "Exam", name: "Exam" },
   { id: "Outdoor activities", name: "Outdoor activities" },
-  { id: "Wellness", name: "Wellness" },
+  // { id: "Outdoor activities", name: "Outdoor activities" },
   { id: "Celebration", name: "Celebration" },
   { id: "AMA sessions", name: "AMA sessions" },
 ];

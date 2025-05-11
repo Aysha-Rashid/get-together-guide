@@ -20,9 +20,10 @@ export default {
 		extend: {
 			colors: {
 				brand: {
-					light: '#3AB0FF',
-					DEFAULT: '#0080FF',
-					dark: '#0057B8',
+					blue: '#00BABC',
+					red: '#ED8179',
+					green: '#39D88F',
+					grey: '#2C2C34'
 					},
 				border: 'hsl(var(--border))', 
 				input: 'hsl(var(--input))',

@@ -35,7 +35,7 @@ const EventFilter: React.FC<EventFilterProps> = ({ selectedCategory, onCategoryC
                 >
                   <span>{category.name}</span>
                   {selectedCategory === category.id && (
-                    <Check className="h-4 w-4 text-violet-600" />
+                    <Check className="h-4 w-4 text-brand-blue" />
                   )}
                 </button>
               ))}
@@ -52,28 +52,28 @@ const EventFilter: React.FC<EventFilterProps> = ({ selectedCategory, onCategoryC
                 variant="outline"
                 className="w-full justify-start text-gray-700"
               >
-                <Calendar className="h-4 w-4 mr-2 text-violet-600" />
+                <Calendar className="h-4 w-4 mr-2 text-brand-blue" />
                 Today
               </Button>
               <Button
                 variant="outline"
                 className="w-full justify-start text-gray-700"
               >
-                <Calendar className="h-4 w-4 mr-2 text-violet-600" />
+                <Calendar className="h-4 w-4 mr-2 text-brand-blue" />
                 Tomorrow
               </Button>
               <Button
                 variant="outline"
                 className="w-full justify-start text-gray-700"
               >
-                <Calendar className="h-4 w-4 mr-2 text-violet-600" />
+                <Calendar className="h-4 w-4 mr-2 text-brand-blue" />
                 This Weekend
               </Button>
               <Button
                 variant="outline"
                 className="w-full justify-start text-gray-700"
               >
-                <Clock className="h-4 w-4 mr-2 text-violet-600" />
+                <Clock className="h-4 w-4 mr-2 text-brand-blue" />
                 Choose Date
               </Button>
             </div>

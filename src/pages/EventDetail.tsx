@@ -59,31 +59,31 @@ const EventDetail = () => {
           <div className="md:w-2/3">
             <Card className="mb-8">
               <CardContent className="p-6 md:p-8">
-                <Link to="/" className="inline-flex items-center text-violet-600 hover:text-violet-800 mb-4">
+                <Link to="/" className="inline-flex items-center text-brand-blue hover:text-brand-blue mb-4">
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   Back to events
                 </Link>
                 
                 <div className="flex flex-wrap items-center gap-2 mb-4">
-                  <Badge className="bg-violet-600">{event.category}</Badge>
+                  <Badge className="bg-brand-blue">{event.category}</Badge>
                 </div>
                 
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{event.title}</h1>
                 
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-8 mb-8">
                   <div className="flex items-center text-gray-600">
-                    <Calendar className="h-5 w-5 mr-2 text-violet-600" />
+                    <Calendar className="h-5 w-5 mr-2 text-brand-blue" />
                     <span>{formattedDate}</span>
                   </div>
                   
                   <div className="flex items-center text-gray-600">
-                    <Clock className="h-5 w-5 mr-2 text-violet-600" />
+                    <Clock className="h-5 w-5 mr-2 text-brand-blue" />
                     <span>{event.time}</span>
                   </div>
                 </div>
                 
                 <div className="flex items-center text-gray-600 mb-6">
-                  <MapPin className="h-5 w-5 mr-2 text-violet-600 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 mr-2 text-brand-blue flex-shrink-0" />
                   <span>{event.location}</span>
                 </div>
                 
@@ -106,8 +106,8 @@ const EventDetail = () => {
                 <div>
                   <h2 className="text-xl font-semibold mb-4">Organizer</h2>
                   <div className="flex items-center">
-                    <div className="bg-violet-100 rounded-full p-3 mr-4">
-                      <User className="h-6 w-6 text-violet-600" />
+                    <div className="bg-brand-blue rounded-full p-3 mr-4">
+                      <User className="h-6 w-6 text-brand-blue" />
                     </div>
                     <div>
                       <h3 className="font-medium">{event.organizer}</h3>
@@ -127,13 +127,13 @@ const EventDetail = () => {
                   <span className="text-2xl font-bold text-gray-900">{event.price}</span>
                 </div> */}
                 
-                <Button className="w-full mb-4 bg-violet-700 hover:bg-violet-800 text-white">
+                <Button className="w-full mb-4 bg-brand-blue hover:bg-brand-blue text-white">
                   Register Now
                 </Button>
                 
                 <Button 
                   variant="outline" 
-                  className="w-full flex items-center justify-center gap-2 border-violet-700 text-violet-700 hover:bg-violet-50"
+                  className="w-full flex items-center justify-center gap-2 border-brand-blue text-brand-blue hover:bg-brand-blue"
                   onClick={handleShare}
                 >
                   <Share2 className="h-4 w-4" />
