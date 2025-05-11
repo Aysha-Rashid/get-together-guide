@@ -19,7 +19,12 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border))',
+				brand: {
+					light: '#3AB0FF',
+					DEFAULT: '#0080FF',
+					dark: '#0057B8',
+					},
+				border: 'hsl(var(--border))', 
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',

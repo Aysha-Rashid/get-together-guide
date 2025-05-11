@@ -18,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Calendar className="h-6 w-6 text-violet-700" />
-            <span className="text-xl font-bold text-gray-800">EventHub</span>
+            <span className="text-xl font-bold text-gray-800">42AD Events</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,9 +33,9 @@ const Navbar = () => {
             <Button variant="outline" className="border-violet-700 text-violet-700 hover:bg-violet-50">
               Log In
             </Button>
-            <Button className="bg-violet-700 hover:bg-violet-800">
+            {/* <Button className="bg-violet-700 hover:bg-violet-800">
               Sign Up
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu */}
@@ -59,9 +59,9 @@ const Navbar = () => {
                 <DropdownMenuItem>
                   <Link to="/login" className="w-full">Log In</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/signup" className="w-full">Sign Up</Link>
-                </DropdownMenuItem>
+                {/* <DropdownMenuItem> */}
+                  {/* <Link to="/signup" className="w-full">Sign Up</Link> */}
+                {/* </DropdownMenuItem> */}
               </DropdownMenuContent>
             </DropdownMenu>
           </div>

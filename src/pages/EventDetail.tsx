@@ -96,6 +96,7 @@ const EventDetail = () => {
                     <p>
                       Join us for an unforgettable experience that brings together like-minded individuals. 
                       This is your opportunity to connect, learn, and engage in a welcoming environment.
+                      <p></p>(default details)
                     </p>
                   </div>
                 </div>
@@ -122,9 +123,9 @@ const EventDetail = () => {
           <div className="md:w-1/3">
             <Card className="sticky top-24">
               <CardContent className="p-6">
-                <div className="mb-4">
+                {/* <div className="mb-4">
                   <span className="text-2xl font-bold text-gray-900">{event.price}</span>
-                </div>
+                </div> */}
                 
                 <Button className="w-full mb-4 bg-violet-700 hover:bg-violet-800 text-white">
                   Register Now

@@ -51,7 +51,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
         </div>
       </CardContent>
       <CardFooter className="pt-2 flex justify-between items-center">
-        <span className="font-medium text-violet-700">{event.price}</span>
+        {/* <span className="font-medium text-violet-700">{event.price}</span> */}
         <Link to={`/event/${event.id}`}>
           <Button variant="outline" className="text-violet-700 border-violet-700 hover:bg-violet-50">
             View Details

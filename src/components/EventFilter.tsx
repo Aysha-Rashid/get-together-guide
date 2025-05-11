@@ -83,21 +83,21 @@ const EventFilter: React.FC<EventFilterProps> = ({ selectedCategory, onCategoryC
           
           {/* Price */}
           <div>
-            <h3 className="font-medium text-sm text-gray-700 mb-3">Price</h3>
-            <div className="space-y-2">
-              <Button
+            {/* <h3 className="font-medium text-sm text-gray-700 mb-3">Price</h3> */}
+            {/* <div className="space-y-2"> */}
+              {/* <Button
                 variant="outline"
                 className="w-full justify-start text-gray-700"
               >
                 Free
-              </Button>
-              <Button
+              </Button> */}
+              {/* <Button
                 variant="outline"
                 className="w-full justify-start text-gray-700"
               >
                 Paid
-              </Button>
-            </div>
+              </Button> */}
+            {/* </div> */}
           </div>
         </div>
       </CardContent>
