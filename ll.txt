@@ -1,0 +1,10 @@
+things needed to add or change:
+- color theme (least priority)
+- add admin page or make the current page as admin page
+- add create or remove event button
+- remove the functionality of the not used buttons
+- changes images in the event
+- change description in the event pages and oraganizer names
+- add register button for the events in the home page
+- add the unregister functionality for all the registered buttons
+- make the login functionable with the 42auth login
