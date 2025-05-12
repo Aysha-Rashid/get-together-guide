@@ -21,7 +21,7 @@ const Index = () => {
   });
 
   return (
-    <div className="min-h-screen bg-black-500">
+    <div className="min-h-screen bg-brand-grey">
       {/* Hero Section */}
       <header className="bg-brand-blue text-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
@@ -38,7 +38,7 @@ const Index = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            <Button className="bg-white text-brand-blue hover:bg-brand-blue">
+            <Button className="bg-white text-brand-blue hover:bg-white">
               <Search className="mr-2" size={16} />
               Search
             </Button>
@@ -46,7 +46,7 @@ const Index = () => {
         </div>
       </header>
  
-      <main className="container  mx-auto px-4 py-12">
+      <main className="bg-brand-grey container  mx-auto px-4 py-12">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Sidebar */}
           <aside className="w-full lg:w-1/4">
@@ -59,13 +59,13 @@ const Index = () => {
           {/* Event Grid */}
           <div className="flex-1">
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold text-gray-800">Upcoming Events</h2>
-              <Link to="/events">
+              <h2 className="text-5xl font-bold text-white">Upcoming Events</h2>
+              {/* <Link to="/events">
                 <Button variant="outline" className="flex items-center gap-2 text-brand-blue border-brand-blue">
                   <Calendar size={16} />
                   View All
                 </Button>
-              </Link>
+              </Link> */}
             </div>
 
             {filteredEvents.length > 0 ? (

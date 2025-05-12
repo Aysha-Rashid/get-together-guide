@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,33 +10,60 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 const Navbar = () => {
+  const [user, setUser] = useState<{ login: string; name: string } | null>(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  const handleLogin = () => {
+    window.location.href = 'https://api.intra.42.fr/oauth/authorize?client_id=u-s4t2ud-12bbc1ca664b8c7219e6b49820fc622f8b7704e4faea206592e91ea925a54a78&redirect_uri=http%3A%2F%2Flocalhost%3A8080&response_type=code'; // Replace with your backend URL
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    setUser(null);
+  };
+
   return (
-    <nav className="bg-brand-grey border-b border-gray-200 sticky top-0 z-25">
+    <nav className="bg-brand-grey border-b border-brand-grey sticky top-0 z-25">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            {/* <Calendar className="h-6 w-6 text-brand-blue" /> */}
-            {/* <span className="text-xl font-bold text-gray-800"> */}
-              <img src="/logo-white-ar.png" alt="Logo" className="h-12 object-contain" />
-            {/* </span> */}
+            <img src="/logo-white-ar.png" alt="Logo" className="h-12 object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* <Link to="/" className="text-gray-700 hover:text-brand-blue font-medium">Home</Link>
-            <Link to="/events" className="text-gray-700 hover:text-brand-blue font-medium">Events</Link> */}
-            {/* <Link to="/create" className="text-gray-700 hover:text-brand-blue font-medium">Create Event</Link> */}
+            {/* Add navigation links here if needed */}
           </div>
 
-          {/* Authentication Buttons */}
+          {/* Authentication Section */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue">
-              Log In
-            </Button>
-            {/* <Button className="bg-brand-blue hover:bg-violet-800">
-              Sign Up
-            </Button> */}
+            {user ? (
+              <>
+                <span className="text-gray-700 font-medium">Hi, {user.name}</span>
+                <Button
+                  variant="outline"
+                  className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
+                  onClick={handleLogout}
+                >
+                  Log Out
+                </Button>
+              </>
+            ) : (
+              <Button
+                variant="outline"
+                className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white"
+                onClick={handleLogin}
+              >
+                Log In
+              </Button>
+            )}
           </div>
 
           {/* Mobile Menu */}
@@ -48,23 +74,17 @@ const Navbar = () => {
                   <Menu className="h-6 w-6" />
                 </Button>
               </DropdownMenuTrigger>
-              {/* <DropdownMenuContent align="end" className="w-56">
-                <DropdownMenuItem>
-                  <Link to="/" className="w-full">Home</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/events" className="w-full">Events</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/create" className="w-full">Create Event</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/login" className="w-full">Log In</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/signup" className="w-full">Sign Up</Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent> */}
+              <DropdownMenuContent align="end" className="w-56">
+                {/* Optional: add mobile nav items here */}
+                {user ? (
+                  <>
+                    <DropdownMenuItem disabled>{user.name}</DropdownMenuItem>
+                    <DropdownMenuItem onClick={handleLogout}>Log Out</DropdownMenuItem>
+                  </>
+                ) : (
+                  <DropdownMenuItem onClick={handleLogin}>Log In</DropdownMenuItem>
+                )}
+              </DropdownMenuContent>
             </DropdownMenu>
           </div>
         </div>

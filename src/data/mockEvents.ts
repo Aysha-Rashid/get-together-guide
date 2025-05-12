@@ -20,7 +20,7 @@ export const mockEvents: Event[] = [
     time: "09:00 AM - 05:00 PM",
     location: "Codingamge website",
     category: "Competitions",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "Competitive club",
   },
   {
@@ -31,7 +31,7 @@ export const mockEvents: Event[] = [
     time: "12:00 PM - 11:00 PM",
     location: "Lab2, 42Abudhabi, UAE",
     category: "Exam",
-    image: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "42Abudhabi, UAE",
   },
   {
@@ -42,7 +42,7 @@ export const mockEvents: Event[] = [
     time: "06:30 PM - 09:00 PM",
     location: "Ferrari World, Abudhabi, UAE",
     category: "Outdoor activities",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "Sponsor",
   },
   {
@@ -53,7 +53,7 @@ export const mockEvents: Event[] = [
     time: "06:30 PM - 09:00 PM",
     location: "Gymnation, Mushrif Mall",
     category: "Outdoor activities",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "Sponsor",
   },
   {
@@ -64,7 +64,7 @@ export const mockEvents: Event[] = [
     time: "08:00 AM - 04:00 PM",
     location: "Serenity Gardens, Denver, CO",
     category: "Celebration",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "Balance & Harmony",
   },
   {
@@ -75,7 +75,7 @@ export const mockEvents: Event[] = [
     time: "01:00 PM - 08:00 PM",
     location: "Auditorium, 42Abudhabi, UAE",
     category: "AMA sessions",
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "42Abudhabi",
   },
   {
@@ -86,7 +86,7 @@ export const mockEvents: Event[] = [
     time: "09:00 AM - 05:00 PM",
     location: "42Abudhabi, UAE",
     category: "Competitions",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800",
+    image: "/logo-white-ar1.png",
     organizer: "Ministry of Interior",
   },
 ];

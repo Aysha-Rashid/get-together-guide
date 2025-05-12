@@ -45,7 +45,7 @@ const EventFilter: React.FC<EventFilterProps> = ({ selectedCategory, onCategoryC
           <Separator />
           
           {/* Date */}
-          <div>
+          {/* <div>
             <h3 className="font-medium text-sm text-gray-700 mb-3">Date</h3>
             <div className="space-y-2">
               <Button
@@ -77,7 +77,7 @@ const EventFilter: React.FC<EventFilterProps> = ({ selectedCategory, onCategoryC
                 Choose Date
               </Button>
             </div>
-          </div>
+          </div> */}
           
           <Separator />
           

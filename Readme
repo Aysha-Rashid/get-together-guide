@@ -1,0 +1,9 @@
+to install:
+
+apt-get update
+apt install npm
+apt install n
+npm i
+npm run dev
+
+npm install express axios dotenv cors
